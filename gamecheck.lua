@@ -1,7 +1,7 @@
 local callbacks = {}
 
 callbacks.notify = function(title,description,duration)
-    loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/mrm7000/plox-hud/main/notify.lua")))().Notify({
+    loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/eqq-evil/plox-hud/main/notify.lua")))().Notify({
         Title = title,
         Description = description,
         Duration = duration
@@ -105,7 +105,7 @@ callbacks.Loader = function(g)
     wait(.6)
     if g == "Tapping Simulator" then
         callbacks.notify("PloxHud", "Loaded b0.1",10)
-        loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/mrm7000/plox-hud/main/games/Tapping%20Simulator.lua")))()
+        loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/eqq-evil/plox-hud/main/games/Tapping%20Simulator.lua")))()
     else
         callbacks.notify("PloxHud", "Game Not Supported",10)
     end
@@ -117,3 +117,4 @@ if game.PlaceId == 5098929086 then
 else
     callbacks.Loader("Just Load")
 end
+
