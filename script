@@ -1,1 +1,1 @@
-loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/mrm7000/plox-hud/main/gamecheck.lua")))()
+loadstring(game:HttpGetAsync(("https://eqq-evil.github.io/plox-hud/gamecheck.lua")))()
