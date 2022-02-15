@@ -4,10 +4,10 @@ _G.ButtonColor = Color3.fromRGB(175, 255, 71);
 
 if game.PlaceId == 5098929086 then
 
-    local Library = loadstring(game:HttpGetAsync(("https://mrm7000.github.io/wally%20ui%20v3/library.lua")))()
+    local Library = loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/eqq-evil/plox-hud/main/wally%20ui.lua")))()
 
     local function notify(title,description,duration)
-        loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/mrm7000/plox-hud/main/notify.lua")))().Notify({
+        loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/eqq-evil/plox-hud/main/notify.lua")))().Notify({
             Title = title,
             Description = description,
             Duration = duration
@@ -57,8 +57,9 @@ if game.PlaceId == 5098929086 then
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
     end)
 
-    folders.ver:Label("PloxHud",Color3.fromRGB(38,38,38),Color3.fromRGB(175, 255, 71))
-    folders.ver:Label("Version b0.1",Color3.fromRGB(38,38,38),Color3.fromRGB(175, 255, 71))
+    folders.ver:Label(getgenv().Name,Color3.fromRGB(38,38,38),Color3.fromRGB(175, 255, 71))
+    folders.ver:Label("Version "..getgenv().Version,Color3.fromRGB(38,38,38),Color3.fromRGB(175, 255, 71))
+    folders.ver:Label("Made by "..getgenv().Scripter,Color3.fromRGB(38,38,38),Color3.fromRGB(175, 255, 71))
 
     folders.gui:DestroyGUI()
     folders.gui:GuiSettings()
