@@ -15,7 +15,9 @@ if game.PlaceId == 5098929086 then
     end
 
     Library.notify = notify
-
+    
+    Library.notify("PloxHud", "Loaded "..getgenv().Version,10)
+    
     local Windows = {
         Main = Library:CreateWindow("Main"),
         Settings = Library:CreateWindow("Settings")
