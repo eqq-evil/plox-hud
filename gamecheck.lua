@@ -104,8 +104,9 @@ callbacks.Loader = function(g)
     Main:TweenSize(UDim2.new(0, 285, 0, 0),"Out","Quint",0.5)
     wait(.6)
     if g == "Tapping Simulator" then
-        callbacks.notify("PloxHud", "Loaded b0.1",10)
         loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/eqq-evil/plox-hud/main/games/Tapping%20Simulator.lua")))()
+    elseif g == "Prison Life" then
+        loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/eqq-evil/plox-hud/main/games/Prison%20Life.lua")))()
     else
         callbacks.notify("PloxHud", "Game Not Supported",10)
     end
@@ -114,6 +115,8 @@ end
 
 if game.PlaceId == 5098929086 then
     callbacks.Loader("Tapping Simulator")
+elseif game.PlaceId == 155615604 then
+    callbacks.Loader("Prison Life")
 else
     callbacks.Loader("Just Load")
 end
