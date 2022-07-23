@@ -119,7 +119,7 @@ if game.PlaceId == 5098929086 then
     callbacks.Loader("Tapping Simulator")
 elseif game.PlaceId == 155615604 then
     callbacks.Loader("Prison Life")
-elseif game.PlaceId == then
+elseif game.PlaceId == 9170761016 then
     callbacks.Loader("Magic Clicker")
 else
     callbacks.Loader("Just Load")
