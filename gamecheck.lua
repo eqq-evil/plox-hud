@@ -107,6 +107,8 @@ callbacks.Loader = function(g)
         loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/eqq-evil/plox-hud/main/games/Tapping%20Simulator.lua")))()
     elseif g == "Prison Life" then
         loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/eqq-evil/plox-hud/main/games/Prison%20Life.lua")))()
+    elseif g == "Magic Clicker" then
+        loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/eqq-evil/plox-hud/main/games/Magic%20Clicker.lua")))()
     else
         callbacks.notify("PloxHud", "Game Not Supported",10)
     end
@@ -117,6 +119,8 @@ if game.PlaceId == 5098929086 then
     callbacks.Loader("Tapping Simulator")
 elseif game.PlaceId == 155615604 then
     callbacks.Loader("Prison Life")
+elseif game.PlaceId == then
+    callbacks.Loader("Magic Clicker")
 else
     callbacks.Loader("Just Load")
 end
