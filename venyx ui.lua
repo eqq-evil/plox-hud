@@ -1,7 +1,7 @@
 local ploxhud_data = game:GetService("HttpService"):JSONDecode(game:HttpGetAsync(("https://eqq-evil.github.io/plox-hud/config.json")))
 getgenv().Name = ploxhud_data.Name
 getgenv().Scripter = ploxhud_data.Scripter
-getgenv().Version = ploxhud_data.Version
+getgenv().Version = "BETA"
 
 repeat wait() until getgenv().Name ~= nil
 repeat wait() until getgenv().Scripter ~= nil
