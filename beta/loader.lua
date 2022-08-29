@@ -104,7 +104,7 @@ callbacks.Loader = function(g)
     Main:TweenSize(UDim2.new(0, 285, 0, 0),"Out","Quint",0.5)
     wait(.6)
     if g == "Tapping Simulator" then
-        loadstring(game:HttpGetAsync(("https://pastebin.com/raw/LgYJTxhT")))()
+        loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/eqq-evil/plox-hud/main/beta/games/tappingsimulator.lua")))()
     else
         callbacks.notify("PloxHud", "Game Not Supported",10)
     end
