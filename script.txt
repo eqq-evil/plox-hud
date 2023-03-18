@@ -1,1 +1,5 @@
+-- Plox hud last update:
+-- v1.0.3 project discountinued
+
+
 loadstring(game:HttpGetAsync(("https://eqq-evil.github.io/plox-hud/gamecheck.lua")))()
