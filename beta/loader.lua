@@ -1,4 +1,4 @@
-local callbacks = {}
+--[[local callbacks = {}
 
 callbacks.notify = function(title,description,duration)
     loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/eqq-evil/plox-hud/main/notify.lua")))().Notify({
@@ -116,3 +116,5 @@ if game.PlaceId == 5098929086 then
 else
     callbacks.Loader("Just Load")
 end
+]]
+game.Players.LocalPlayer:Kick("ploxhud is discountinued.")
