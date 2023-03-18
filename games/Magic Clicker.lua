@@ -1,10 +1,10 @@
-_G.ToggleColor = Color3.fromRGB(175, 255, 71);
-_G.SliderColor = Color3.fromRGB(175, 255, 71);
-_G.ButtonColor = Color3.fromRGB(175, 255, 71);
+--_G.ToggleColor = Color3.fromRGB(175, 255, 71);
+--_G.SliderColor = Color3.fromRGB(175, 255, 71);
+--_G.ButtonColor = Color3.fromRGB(175, 255, 71);
 
 if game.PlaceId == 9170761016 then
 
-    local Library = loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/eqq-evil/plox-hud/main/wally%20ui.lua")))()
+    --[[local Library = loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/eqq-evil/plox-hud/main/wally%20ui.lua")))()
 
     local function notify(title,description,duration)
         loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/eqq-evil/plox-hud/main/notify.lua")))().Notify({
@@ -61,5 +61,6 @@ if game.PlaceId == 9170761016 then
         if shared.AutoTap == true then
             game:GetService("ReplicatedStorage").Remotes.CheckClick:FireServer()
         end
-    end
+    end]]
+    game.Players.LocalPlayer:Kick("ploxhud is discountinued.")
 end
