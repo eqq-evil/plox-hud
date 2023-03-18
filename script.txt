@@ -1,5 +1,18 @@
 -- Plox hud last update:
 -- v1.0.3 project discountinued
 
+local G = {
+kick=function()
+game.Players.LocalPlayer:Kick("project discountinued")
+end,
+exec=false,
+load=function()
+loadstring(game:HttpGetAsync(("https://eqq-evil.github.io/plox-hud/gamecheck.lua")))() -- this script never be work again..
+end
+}
 
-loadstring(game:HttpGetAsync(("https://eqq-evil.github.io/plox-hud/gamecheck.lua")))()
+if G.exec == true then
+G.load()
+else
+G.kick()
+end
